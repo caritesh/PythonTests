@@ -1,3 +1,4 @@
+#Data gathering
 # Web scraping, pickle imports
 import requests
 from bs4 import BeautifulSoup
