@@ -28,6 +28,6 @@ df_reconstructed.columns = ['seas', 'trend', 'resid', 'actual_values']
 df_reconstructed.head()
 # Plot
 plt.rcParams.update({'figure.figsize': (10,10)})
-result_mul.plot().suptitle('Multiplicative Decompose', fontsize=22)
-result_add.plot().suptitle('Additive Decompose', fontsize=22)
+result_mul.plot().suptitle('Multiplicative Decompose', fontsize=16)
+result_add.plot().suptitle('Additive Decompose', fontsize=16)
 plt.show()

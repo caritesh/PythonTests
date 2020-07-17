@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 
 plt.rcParams.update({'figure.figsize': (10, 7), 'figure.dpi': 120})
+
 # Draw Plot for ser
 ser = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets/master/a10.csv', parse_dates=['date'], index_col='date')
 ser.reset_index(inplace=True)
@@ -14,13 +15,14 @@ ser.reset_index(inplace=True)
 ser['year'] = [d.year for d in ser.date]
 ser['month'] = [d.strftime('%b') for d in ser.date]
 years = ser['year'].unique()
+ser.head(n=5)
 
 # Prep Colors
 np.random.seed(100)
 mycolors = np.random.choice(list(mpl.colors.XKCD_COLORS.keys()), len(years), replace=False)
 
 # Draw Plot
-#plt.figure(figsize=(16,12), dpi= 80)
+
 for i, y in enumerate(years):
     if i > 0:        
         plt.plot('month', 'value', data=ser.loc[ser.year==y, :], color=mycolors[i], label=y)

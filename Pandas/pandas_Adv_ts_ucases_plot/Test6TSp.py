@@ -14,3 +14,4 @@ result_mul = seasonal_decompose(df['value'], model='multiplicative', extrapolate
 detrended = df.value.values - result_mul.trend
 plt.plot(detrended)
 plt.title('Drug Sales detrended by subtracting the trend component', fontsize=16)
+plt.show()

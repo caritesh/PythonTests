@@ -35,8 +35,10 @@ print(Test.head(3))
 
 Test["Date"]= pd.to_datetime(Test["Date"])
 print(Test.dtypes)
+
 Test['Time'] = pd.DatetimeIndex(Test['Date']).time
 print(Test.head(3))
+
 Test['Hour'] = pd.DatetimeIndex(Test['Date']).hour
 print(Test.head(3))
 

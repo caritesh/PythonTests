@@ -19,4 +19,4 @@ deseasonalized = df.value.values / result_mul.seasonal
 # Plot
 plt.plot(deseasonalized)
 plt.title('Drug Sales Deseasonalized', fontsize=16)
-plt.plot()
+plt.show()
