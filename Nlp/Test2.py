@@ -1,7 +1,7 @@
 #Cleaning data
 # Let's take a look at our data again
 next(iter(data.keys()))
-
+    
 # Notice that our dictionary is currently in key: comedian, value: list of text format
 next(iter(data.values()))
 

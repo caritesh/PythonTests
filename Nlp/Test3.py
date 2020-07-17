@@ -10,10 +10,11 @@ data_df['full_name'] = full_names
 data_df
 
 # Let's pickle it for later use
-data_df.to_pickle("corpus.pkl")
+data_df.to_pickle("Nlp/corpus.pkl")
 
 #Creating Document-Term Matrix
-# We are going to create a document-term matrix using CountVectorizer, and exclude common English stop words
+# We are going to create a document-term matrix using CountVectorizer, 
+# and exclude common English stop words
 from sklearn.feature_extraction.text import CountVectorizer
 
 cv = CountVectorizer(stop_words='english')
@@ -23,9 +24,9 @@ data_dtm.index = data_clean.index
 data_dtm
 
 # Let's pickle it for later use
-data_dtm.to_pickle("dtm.pkl")
+data_dtm.to_pickle("Nlp/dtm.pkl")
 
 # Let's also pickle the cleaned data (before we put it in document-term matrix format) and the CountVectorizer object
-data_clean.to_pickle('data_clean.pkl')
-pickle.dump(cv, open("cv.pkl", "wb"))
+data_clean.to_pickle('Nlp/data_clean.pkl')
+pickle.dump(cv, open("Nlp/cv.pkl", "wb"))
 
