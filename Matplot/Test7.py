@@ -11,6 +11,7 @@ plt.rcParams.update({'figure.figsize': (10, 7), 'figure.dpi': 120})
 ser = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets/master/a10.csv', parse_dates=['date'], index_col='date')
 ser.reset_index(inplace=True)
 
+
 # Prepare data
 ser['year'] = [d.year for d in ser.date]
 ser['month'] = [d.strftime('%b') for d in ser.date]

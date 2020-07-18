@@ -19,3 +19,4 @@ fig, axes = plt.subplots(1,2,figsize=(16,3), dpi= 100)
 plot_acf(df.value.tolist(), lags=50, ax=axes[0])
 plot_pacf(df.value.tolist(), lags=50, ax=axes[1])
 plt.show()
+

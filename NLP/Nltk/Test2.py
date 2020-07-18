@@ -17,7 +17,7 @@ document3 = 'This was an amazing experience'
 listofdocuments = [document1,document2,document3]
 
 #Creating a bag of words for list of documents
-#we can use fit methodand fit the documents to the vectorized object
+#we can use fit method and fit the documents to the vectorized object
 bag_of_words = vectorizer.fit(listofdocuments)
 
 #check the bag of words

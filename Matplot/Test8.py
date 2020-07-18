@@ -18,7 +18,7 @@ ser['month'] = [d.strftime('%b') for d in ser.date]
 years = ser['year'].unique()
 
 # Draw Plot
-fig, axes = plt.subplots(1, 2, figsize=(20,7), dpi= 80)
+fig, axes = plt.subplots(1, 2, figsize=(14,7), dpi= 80)
 sns.boxplot(x='year', y='value', data=ser, ax=axes[0])
 sns.boxplot(x='month', y='value', data=ser.loc[~ser.year.isin([1991, 2008]), :])
 
