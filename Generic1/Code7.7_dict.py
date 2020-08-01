@@ -3,6 +3,15 @@
 # is as a key,value pair
 
 empty_dict = {}
+empty_dict['name'] = 'john'
+empty_dict
+empty_dict.keys()
+empty_dict.values()
+empty_dict['lname'] = 'sanders'
+empty_dict
+empty_dict.keys()
+empty_dict.values()
+
 d1 = {'a' : 'some value',
       'b' : [1, 2, 3, 4]}
 d1
@@ -12,13 +21,19 @@ d1
 
 d1['b']
 'b' in d1
+
 d1.keys()
 d1.values()
+
 del d1[1]
 d1
+
+d1
+d1['a'] = 'new value'
+d1
+
 n = d1.pop('a')
 n
-d1
 
 a1 = {'help':'world',10:20}
 d1.update(a1)
@@ -42,6 +57,7 @@ print(customer.get("bday","jan 1st"))
 
 customer["name"] = "james"
 print(customer["name"])
+customer
 
 customer["birth date"] = "Jan 1 2000"
 print(customer["birth date"])

@@ -10,6 +10,8 @@ for price in stock_prices:
     total += price
 print(f"Total: {total}")
 avgprice = total/len(stock_prices)
+
+
 print(f"Avgprice: {avgprice}")
 print('#' * 30)
 
@@ -21,6 +23,11 @@ for x in range(4):
 
 print('#' * 30)
 
+nums = [1,2,3,4,5]
+for i in nums:
+    for j in nums:
+        print(i*j,end=',')
+
 #Printing a pattern
 numbers = [5,2,5,2,2]
 for x_count in numbers:
@@ -28,9 +35,9 @@ for x_count in numbers:
 print('#' * 30)
 
 #Printing a pattern using nested loops
-for x_count in numbers:
+for i in numbers:
     output = ''
-    for count in range(x_count):
+    for n in range(i):
         output += 'x'
     print(output)
 

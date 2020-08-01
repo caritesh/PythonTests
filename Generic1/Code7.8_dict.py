@@ -13,8 +13,11 @@ myfamily = {
     "year" : 2011
   }
 }
-#print(myfamily)
-#print(myfamily.get("child3"))
+print(myfamily)
+print(myfamily.get("child3"))
+
+myfamily["child3"]
+
 myfamily["child3"].update({"year":2022})
 print(myfamily)
 

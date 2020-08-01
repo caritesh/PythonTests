@@ -4,17 +4,35 @@
 numbers = (1,2,3,5,6)
 print(numbers[0])
 
+for i in numbers:
+    print(i)
+
+numbers.count(1)
+
 tup = 4, 5, 6
 tup
+type(tup)
 
 #creating a tuple of tuples
 nested_tup = (4, 5, 6), (7, 8)
 nested_tup
+for i in nested_tup:
+    print(i[0])
+len(nested_tup)
 
 #converting sequence/iterator to tuple
 x = tuple([4, 0, 2])
 x
 type(x)
+
+a = [1,2,3,4,5]
+type(a)
+t_a = tuple(a)
+t_a
+type(t_a)
+t_l = list(t_a)
+t_l
+type(t_l)
 
 tup = tuple('hello world')
 tup
@@ -44,9 +62,23 @@ xccat
 xccat2 = ('fool', 'barbie') * 4
 xccat2
 
+xcclst = ['hello','hi'] * 4
+xcclst
+
 #unpacking tuples
 tup = (1,2,3)
 a,b,c = tup
+a
+b
+c
+
+x,y,z = 100,200,"hello"
+x
+y
+z
+
+lst = [100,200,300]
+a,b,c = lst
 a
 b
 c

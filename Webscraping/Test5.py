@@ -3,8 +3,7 @@
 from bs4 import BeautifulSoup
 
 #sample web document from www.simplilearn.com website
-data_SL = """
-<ul class= "content-col_discover">
+data_SL = """<ul class= "content-col_discover">
 <h5>Discover</h5>
 <li><a href="/resources" id="free_resources">Free resources</a></li>
 <li><a href="http://community.simplilearn.com/" id="community">Simplilearn community</a></li>

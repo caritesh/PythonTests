@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 
 #create a soup object and pass the web document as a paramter and use lxml parser for parsing
-HTMLfilepath = "web_scraping_example.html" 
+HTMLfilepath = "Webscraping/web_scraping_example.html" 
 with open(HTMLfilepath,"r") as organization:
     soup = BeautifulSoup(organization,"lxml")
 
@@ -12,6 +12,7 @@ soup.contents
 
 #search using find methods (later we can search in tree using filters)
 tag_li=soup.find("li")
+tag_li
 
 #create a tag object and print it
 print(type(tag_li))
@@ -56,7 +57,7 @@ find_class = soup.findAll(class_= 'HRmanager')
 
 #view type of class
 type(find_class)
-
+find_class
 #print the second resultset
 print(find_class[0])
 
@@ -77,9 +78,10 @@ print(org)
 
 #find the next siblings
 next_sibling = org.findNextSiblings()
+next_sibling
 
 #print parents
-parent = org.findParents
+parent = org.findParent
 print(parent)
 
 #find and print previous (search all previous tags)
@@ -88,6 +90,7 @@ print(all_previous)
 
 #search and print previous sibling
 previous_sibling = org.findPreviousSibling()
+previous_sibling
 
 #search and print all next
 all_next = org.findAllNext()

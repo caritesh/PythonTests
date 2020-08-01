@@ -3,19 +3,18 @@
 from bs4 import BeautifulSoup
 
 #Create employee html document
-employee_html_doc = """
-<employees>
+employee_html_doc = """<employees>
 <employee class="accountant">
-    <firstname>John</firstname>
-    <lastname>Doe</lastname>
+<firstname>John</firstname>
+<lastname>Doe</lastname>
 </employee>
 <employee class="manager">
-    <firstname>Anna</firstname>
-    <lastname>Smith</lastname>
+<firstname>Anna</firstname>
+<lastname>Smith</lastname>
 </employee>
 <employee class="developer">
-    <firstname>Peter</firstname>
-    <lastname>Jones</lastname>
+<firstname>Peter</firstname>
+<lastname>Jones</lastname>
 </employee>
 </employees>
 """

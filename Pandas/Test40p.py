@@ -71,3 +71,4 @@ df.to_msgpack(...)	# msgpack (serialize) object
 df.to_gbq(...)  # to a Google BigQuery table.
 df.to_string(...)  # console-friendly tabular output.
 df.to_clipboard(...) # clipboard that can be pasted into Excel
+

@@ -25,7 +25,7 @@ print(soup.prettify())
 soup.original_encoding
 
 #format the tag a to xml
-soup.body.a.prettify(formatter='xml')
+#to be checked....> soup.body.a.prettify(formatter="html")
 
 #define a custom function to convert string values to uppercase
 def upperCaseFn(strtext):
@@ -33,3 +33,6 @@ def upperCaseFn(strtext):
 
 #format using custom function for outputting string texts in uppercase
 soup.body.a.prettify(formatter=upperCaseFn)
+
+
+
