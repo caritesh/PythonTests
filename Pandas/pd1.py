@@ -48,7 +48,7 @@ print('*' * 100)
 
 #If you have data contained in a Python dict, you can create a Series from it 
 # by passing the dict:
-sdata = {'paris': 35000, 'germany': 71000, 'greece': 16000, 'norway': 5000}
+sdata = {'france': 35000, 'germany': 71000, 'greece': 16000, 'norway': 5000}
 ser3 = pd.Series(sdata)
 print(ser3)
 print(ser3.index)
@@ -57,7 +57,8 @@ print('*'*100)
 
 #When only passing a dict, the index in the resulting Series will have the 
 # dict’s keys in sorted order
-country = ['greece', 'paris', 'germany', 'norway']
+country = sorted(['greece', 'france', 'germany', 'norway'])
+country
 ser4 = pd.Series(sdata, index=country)
 print(ser4)
 print('*'*100)
@@ -88,7 +89,9 @@ print('*'*100)
 
 #A Series’s index can be altered in place by assignment
 ser.index = ['Bob', 'Steve', 'Jeff', 'Ryan']
+
 print(ser)
+
 print('*'*10)
 
 

@@ -39,6 +39,17 @@ print(np_arange.reshape(12,1))
 np_linspace = np.linspace(1,6,5) #first ele,last ele & total no of equidistant elements
 print(np_linspace)
 
+np_linspace = np.linspace(1,10,4)
+np_linspace
+
+x = range(1,12,5)
+for i in x:
+    print(i,end=":")
+
+x = range(12)
+for i in x:
+    print(i,end=',')
+
 #one dimensional array
 oneD_array = np.arange(15)
 print(oneD_array)

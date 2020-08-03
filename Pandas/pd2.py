@@ -24,7 +24,7 @@ print(framenew)
 
 #As with Series, if you pass a column that isn’t contained in data, it will appear with NA values in the result
 frame2 = pd.DataFrame(data, columns=['year', 'eucountry', 'popul', 'debt'],
-	 			index=['one', 'two', 'three', 'four', 'five'])
+index=['one', 'two', 'three', 'four', 'five'])
 print(frame2)
 print(frame2.columns)
 
@@ -41,6 +41,7 @@ print(frame2.ix['three'])
 #.iloc for positional indexing
 
 print(frame2.loc['three'])
+print(frame2.loc[['three','one']])
 print(frame2.iloc[3])
 
 #Columns can be modified by assignment. For example, the empty 'debt' column could be assigned a scalar 
@@ -50,6 +51,9 @@ print(frame2)
 
 frame2['debt'] = np.arange(5.)
 print(frame2)
+
+frame2['debt'] = range(5)
+frame2
 
 #When assigning lists or arrays to a column, the value’s length must match the length
 #of the DataFrame. If you assign a Series, it will be instead conformed exactly to the
@@ -62,9 +66,15 @@ print(frame2)
 frame2['eastern'] = frame2.eucountry == 'france'
 print(frame2)
 
+frame2['abvthold'] = frame2.popul > 1.6
+frame2
+
 #The del keyword will delete columns as with a dict:
 del frame2['eastern']
+del frame2['abvthold']
 print(frame2.columns)
+
+frame2
 
 #The column returned when indexing a DataFrame is a view on the underlying
 #data, not a copy. Thus, any in-place modifications to the Series
