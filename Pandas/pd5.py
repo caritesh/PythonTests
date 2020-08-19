@@ -56,7 +56,8 @@ df1 = pd.DataFrame(np.arange(9.).reshape((3, 3)), columns=list('bcd'),
 index=['Ohio', 'Texas', 'Colorado'])
 df2 = pd.DataFrame(np.arange(12.).reshape((4, 3)), columns=list('bde'),
 index=['Utah', 'Ohio', 'Texas', 'Oregon'])
-
+df3 = pd.DataFrame([np.arange(3)],columns=['a','b','c'],index=['values'])
+df3
 #Adding returns a DataFrame whose index and columns are the unions of the ones in each DataFrame:
 print(df1+df2)
 

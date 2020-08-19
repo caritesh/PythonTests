@@ -16,7 +16,7 @@ data.index
 #now we can do a partial indexing & select subsets of the data
 data['b']
 data['b':'c']
-data.ix[['b', 'd']]
+data.loc[['b', 'd']]
 
 #selection from inner level
 data[:, 2]
@@ -31,12 +31,12 @@ data.unstack().stack()
 frame = pd.DataFrame(np.arange(12).reshape((4, 3)),
 index=[['a', 'a', 'b', 'b'], [1, 2, 1, 2]],
 columns=[['germany', 'france', 'sweden'],
-['Green', 'Red', 'Green']])
+['Green', 'Red', 'Orange']])
 frame
 
 #The hierarchical levels can have names
 frame.index.names = ['key1', 'key2']
-frame.columns.names = ['state', 'color']
+frame.columns.names = ['state', 'zone']
 frame
 
 #With partial column indexing you can similarly select groups of columns
@@ -55,7 +55,8 @@ frame.swaplevel('key1', 'key2')
 #in which you can specify the level you want to sum by on a particular axis.
 frame.sum(level='key2')
 
-frame.sum(level='color', axis=1)
+frame.sum(level='zone', axis=1)
+
 
 #Using a DataFrame’s Columns for indexing
 frame = pd.DataFrame({'a': range(7), 'b': range(7, 0, -1),
@@ -74,6 +75,9 @@ frame.set_index(['c', 'd'], drop=False)
 #moving hierarchial index into columns
 #reset_index, on the other hand, does the opposite of set_index
 frame2.reset_index()
+
+
+
 
 
 

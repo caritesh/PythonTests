@@ -15,7 +15,13 @@ linalg.det(matrix)
 #Solving Linear equations
 #2x+3y+z=21,-x+5y+4z=9,3x+2y+9z=6
 numArray = np.array([[2,3,1],[-1,5,4],[3,2,9]])
+numres = np.array([21,9,6])
+numArray
+numres
+res = np.linalg.solve(numArray,numres)
+res
 
+np.allclose(np.dot(numArray,res),numres)
 #single value decomposition
 numSvdArr = np.array([[3,5,1],[9,5,7]])
 numSvdArr.shape

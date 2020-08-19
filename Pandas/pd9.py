@@ -17,7 +17,7 @@ string_data.isnull()
 from numpy import nan as NA
 data = pd.Series([1, NA, 3.5, NA, 7])
 data.dropna()
-
+data.notnull()
 #by boolean indexing method
 data[data.notnull()]
 
@@ -43,7 +43,7 @@ df
 df.loc[:4, 1] = NA
 df.loc[:2, 2] = NA
 df
-df1=df.dropna(thresh=3)
+df1=df.dropna(thresh=2)
 df1
 
 #Filling Missing Data

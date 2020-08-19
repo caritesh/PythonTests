@@ -28,6 +28,10 @@ print(df4)
 pd.merge(df3, df4, left_on='lkey', right_on='rkey')
 print(pd.merge(df3, df4, left_on='lkey', right_on='rkey'))
 
+# df5 = pd.read_csv("I:\\GitContent\\Datasets\\Bank_full1_2018.csv")
+# df6 = pd.read_csv("I:\\GitContent\\Datasets\\Bank_full1_2019.csv")
+# df7 = pd.merge(df5, df6, left_on='y', right_on='y')
+
 #By default merge does an 'inner' join; the keys in the result are the intersection.
 #Other possible options are 'left', 'right', and 'outer'.
 #Note**The outer join takes the union of the keys, combining the effect of applying 
@@ -85,6 +89,7 @@ print(pd.merge(left1, right1, left_on='key', right_index=True))
 #forming union using outer join
 pd.merge(left1, right1, left_on='key', right_index=True, how='outer')
 print(pd.merge(left1, right1, left_on='key', right_index=True, how='outer'))
+
 
 #if hierarchial indexed dat
 lefth = pd.DataFrame({'key1': ['Ohio', 'Ohio', 'Ohio', 'Nevada', 'Nevada'],

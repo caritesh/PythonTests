@@ -32,6 +32,7 @@ print(frame2.columns)
 print(frame2['eucountry'])
 print(frame2.year)
 
+
 #Rows can also be retrieved by position or name or such as the ix indexing field
 print(frame2.ix['three'])
 
@@ -48,6 +49,10 @@ print(frame2.iloc[3])
 #value or an array of values
 frame2['debt'] = 16.5
 print(frame2)
+frame2['debt'] == 100
+frame2['debt'] != 100
+frame2
+
 
 frame2['debt'] = np.arange(5.)
 print(frame2)
@@ -83,9 +88,8 @@ frame2
 
 
 #Another common form of data is a nested dict of dicts format:
-pop = {'norway': {2001: 2.4, 2002: 2.9},
-	'denmark': {2000: 1.5, 2001: 1.7, 2002: 3.6}}
-
+pop = {'norway': {2001: 2.4, 2002: 2.9},'denmark': {2000: 1.5, 2001: 1.7, 2002: 3.6}}
+pop
 #If passed to DataFrame, it will interpret the outer dict keys as the columns and the inner
 #keys as the row indices:
 frame3 = pd.DataFrame(pop)
@@ -102,7 +106,7 @@ print(pd.DataFrame(pop, index=[2001, 2002, 2003]))
 
 #Dicts of Series are treated much in the same way:
 pdata = {'norway': frame3['norway'][:-1],
-	'denmark': frame3['denmark'][:2]}
+'denmark': frame3['denmark'][:2]}
 pd.DataFrame(pdata)
 
 #If a DataFrame’s index and columns have their name attributes set, these will also be

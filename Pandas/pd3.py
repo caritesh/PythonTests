@@ -12,23 +12,27 @@ print(index)
 index[1:]
 print(index[1:])
 
-
-#type(item)
-#type(index)
+type(item)
+type(index)
 #index[0]
-#index[0]='try this to check mutability'
+index[0]='try this to check mutability'
 
 index
-index = pd.Index(np.arange(3))
-print(index)
-print('*' * 50)
-item2 = pd.Series([1,2,3],index=index)
-item2.index is index
-print(item2.index is index)
+
+# indexTest = pd.Index(np.arange(3))
+# print(indexTest)
+# print('*' * 50)
+# item2 = pd.Series([1,2,3],index=indexTest)
+
+# item2
+
+# item2.index
+# item2.index is indexTest
+# print(item2.index is indexTest)
 
 #Apart from being array-like, an Index also functions as a fixed-size set:
 pop = {'norway': {2001: 2.4, 2002: 2.9},
-	'denmark': {2000: 1.5, 2001: 1.7, 2002: 3.6}}
+'denmark': {2000: 1.5, 2001: 1.7, 2002: 3.6}}
 frame3 = pd.DataFrame(pop)
 print(frame3)
 

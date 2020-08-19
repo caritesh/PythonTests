@@ -29,6 +29,7 @@ meat_to_animal = {
 }
 
 data['animal'] = data['food'].map(str.lower).map(meat_to_animal)
+data['animal'] = data['food'].map(str.lower).map(lambda n: n.upper())
 print(data)
 
 #using lambda

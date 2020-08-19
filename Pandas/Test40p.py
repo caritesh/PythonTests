@@ -1,13 +1,13 @@
 import pandas as pd
-x = pd.read_csv("I:\\GitContent\\Datasets\\Bank_full.csv")
+#x = pd.read_csv("I:\\GitContent\\Datasets\\Bank_full.csv")
 #reading from web to create dataframe
-#y = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/datasets/Bank_full.csv')
+x = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets/master/Bank_full1.csv')
 df = pd.DataFrame(x)
 print(df.columns)
 print(x.values)
 df[df.age > 80]
 df[df.age > 80].education
-df[(df.age > 80) & (df.marital=='married')].education
+df[(df.age > 80) & (df.marital=='married')]
 df[(df.age > 80) & (df.marital=='married')].sort_values('balance',ascending=False)
 df[(df.age.isin(['82','15','17','35']))]
 df.groupby(['age','y']).size()

@@ -79,6 +79,7 @@ print(b)
 #option1
 np.where(pd.isnull(a), b, a)
 print(np.where(pd.isnull(a), b, a))
+
 #option 2
 
 b[:-2].combine_first(a[2:])

@@ -20,11 +20,10 @@ print(frame.apply(f))
 #formatted string from each floating point value in frame. use applymap
 format = lambda x: '%.2f' % x
 print(frame.applymap(format))
+print(frame.applymap(lambda n: '%.2f' % n))
 
 #map method in series for element-wise function
 print(frame['e'].map(format))
-
-
 
 #Sorting & Ranking
 #To sort lexicographically by row or column index, use the sort_index method

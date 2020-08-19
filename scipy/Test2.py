@@ -7,6 +7,7 @@ import sympy as sy
 
 #to solve integration of x**2 for a limit 0 to 2
 x = np.linspace(-1,3,1000)
+
 def f(x) : return x**2
 
 plt.plot(x,f(x))
@@ -26,6 +27,7 @@ print(plt.show())
 
 #to evaluate function and to work symbolically we can use sympy 
 #change x to symbol
+x
 x = sy.Symbol('x')
 def f(x) : return x**2
 sy.integrate(f(x), (x,0,2))

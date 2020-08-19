@@ -5,14 +5,14 @@ import numpy as np
 
 # Create a datetime variable for today
 base = datetime.datetime.today()
-
+base
 # Create a list variable that creates 365 days of rows of datetime values
 date_list = [base - datetime.timedelta(days=x) for x in range(0, 365)]
 print(date_list[0:5])
 
 # Create a list variable of 365 numeric values
 score_list = list(np.random.randint(low=1, high=1000, size=365))
-
+score_list
 # Create an empty dataframe
 df = pd.DataFrame()
 

@@ -10,6 +10,7 @@
 import numpy as np
 from scipy.optimize import minimize
 
+
 #def function to calcuate volume of box
 def calcVolume(x):
     length = x[0]
@@ -34,15 +35,15 @@ def objective(x):
 
 #create a function that returns our constraints
 def constraint(x):
-    return 10 - calcSurface(x)
+    return 100 - calcSurface(x)
 
 #scipy requires constraints to be loaded in a dictionary
 cons = ({'type': 'ineq', 'fun':constraint})
 
 #set intial guess values for box dimensions
-lengthGuess = 1
-widthGuess = 1
-HeightGuess = 1
+lengthGuess = 10
+widthGuess = 10
+HeightGuess = 10
 
 #load guess values into a numpy array
 x0 = np.array([lengthGuess,widthGuess,HeightGuess])

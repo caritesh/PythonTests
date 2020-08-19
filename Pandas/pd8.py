@@ -26,6 +26,11 @@ df.sum(axis=1)
 df.mean(axis=1, skipna=False)
 df.describe()
 
+# x = [12,34,34]
+# from statistics import mean
+# x = [-1.135797  ,0.088060 ,-0.679053]
+# mean(x)
+
 #On non-numeric data, describe produces alternate summary statistics
 ser12 = pd.Series(['a', 'a', 'b', 'c'] * 4)
 ser12.describe()
@@ -37,6 +42,7 @@ uniques.sort()
 uniques
 
 #series of value frequencies
+ser11 = pd.Series(range(5), index=['a', 'a', 'b', 'b', 'c'])
 ser13.value_counts()
 ##pd.value_counts(ser13.values, sort=False)
 

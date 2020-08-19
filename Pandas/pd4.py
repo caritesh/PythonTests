@@ -1,3 +1,4 @@
+
 #Reindexing
 #to create a new object with the data confirmed to a new index.
 import pandas as pd
@@ -8,9 +9,11 @@ print(ser)
 #calling reindex to rearrange data as per new index
 ser1 = ser.reindex(['a','b','c','d'])
 print(ser1)
+
 print(ser)
 
 ser3 = ser1.reindex(['a','b','c','d','e'])
+#ser3 = ser1.reindex(['a','test1','b','test2','c','test3','d','test4','e'])
 print(ser3)
 
 ser3 = ser1.reindex(['a','b','c','d','e'],fill_value=0)

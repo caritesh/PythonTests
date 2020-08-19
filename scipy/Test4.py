@@ -6,7 +6,8 @@
 #     success	(bool) Whether or not the optimizer exited successfully.
 #     status	(int) Termination status of the optimizer. Its value depends on the underlying solver. Refer to message for details.
 #     message	(str) Description of the cause of the termination.
-#     fun, jac, hess, hess_inv	(ndarray) Values of objective function, Jacobian, Hessian or its inverse (if available). The Hessians may be approximations, see the documentation of the function in question.
+#     fun, jac, hess, hess_inv	(ndarray) Values of objective function, Jacobian, Hessian or its inverse 
+#     (if available). The Hessians may be approximations, see the documentation of the function in question.
 #     nfev, njev, nhev	(int) Number of evaluations of the objective functions and of its Jacobian and Hessian.
 #     nit	(int) Number of iterations performed by the optimizer.
 #     maxcv	(float) The maximum constraint violation.

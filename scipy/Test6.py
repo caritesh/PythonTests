@@ -33,7 +33,7 @@ print(popt)
 xFit = np.arange(0.0,0.5,0.01)
 
 #plot the fitted function
-plt.plot(xFit, func(xFit, *popt), 'r', label = 'fit params: a = %5.3f,b=%5.3f' & tuple(popt))
+#plt.plot(xFit, func(xFit, *popt), 'r', label = 'fit params: a = %5.3f, b=%5.3f' & tuple(popt))
 
 plt.xlabel('x')
 plt.ylabel('y')
