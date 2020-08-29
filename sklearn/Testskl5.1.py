@@ -8,15 +8,11 @@ from sklearn.model_selection import train_test_split #instead of cross_validatio
 import pandas as pd
 
 
-X = np.array([[1,2],
-              [1.5,1.8],
-              [5,8],
-              [8,8],
-              [1,0.6],[9,11]])
+X = np.array([[1,2],[1.5,1.8],[5,8],[8,8],[1,0.6],[9,11]])
 X
 
-# plt.scatter(X[:,0],X[:,1], s= 100, linewidth=5)
-# plt.show()
+plt.scatter(X[:,0],X[:,1], s= 100, linewidth=5)
+plt.show()
 
 #define classifier
 clf = KMeans(n_clusters=2)
@@ -37,6 +33,8 @@ plt.show()
 #==========================================
 #KMeans on a public dataset
 #https://pythonprogramming.net/static/downloads/machine-learning-data/titanic.xls
+
+#@@conversion error
 
 # Pclass Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)
 # survival Survival (0= No; 1 = Yes)
@@ -67,7 +65,8 @@ df.head()
 df.drop(['body','name'],1,inplace=True)
 #df.convert_objects(convert_numeric=True)
 df.fillna(0, inplace =True)
-
+df
+columns = df.columns.values
 def handle_non_numerical_data(df):
     columns = df.columns.values
 
@@ -90,7 +89,7 @@ def handle_non_numerical_data(df):
 df = handle_non_numerical_data(df)
 #print(df.head())  
 
-X = np.array(df.drop(['survived'],1).astype(float))
+X = np.array(df.drop(['survived'],1))
 y = np.array(df['survived'])
 
 clf = KMeans(n_clusters=2)

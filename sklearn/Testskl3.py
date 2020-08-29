@@ -54,7 +54,7 @@ cnf_matrix = metrics.confusion_matrix(y_test,y_pred)
 cnf_matrix
 
 print('Accuracy: ',metrics.accuracy_score(y_test, y_pred))
-print('Accuracy: ',metrics.precision_score(y_test, y_pred))
+#print('Accuracy: ',metrics.precision_score(y_test, y_pred))
 
 #OPTIONAL INSTEAD OF CREATING TRAIN AND TEST DATASET
 #logReg.fit(X_feature,Y_target)

@@ -6,8 +6,11 @@ from sklearn.datasets import load_breast_cancer
 
 cancer = load_breast_cancer()
 cancer.keys()
+cancer
 
 print(cancer['DESCR'])
+print(cancer['target'])
+
 
 df = pd.DataFrame(cancer['data'],columns=cancer['feature_names'])
 df.head()

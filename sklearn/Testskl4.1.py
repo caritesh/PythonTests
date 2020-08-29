@@ -13,7 +13,7 @@ from math import sqrt
 
 #k class of features & r class of labels
 dataset = {'k':[[1,2],[2,3],[3,1]],'r':[[6,5],[7,7],[8,6]]}
-
+dataset
 #new point to be classified
 new_features = [5,7]
 

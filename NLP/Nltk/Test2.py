@@ -15,11 +15,13 @@ document3 = 'This was an amazing experience'
 
 #putting them togther as a list
 listofdocuments = [document1,document2,document3]
+listofdocuments
+
 
 #Creating a bag of words for list of documents
 #we can use fit method and fit the documents to the vectorized object
 bag_of_words = vectorizer.fit(listofdocuments)
-
+bag_of_words
 #check the bag of words
 bag_of_words
 
@@ -29,7 +31,8 @@ bag_of_words = vectorizer.transform(listofdocuments)
 #print bag of words and see properties of vectorized object (1st being tuple and 2nd being freq of words)
 print(bag_of_words)
 
-#tuple indicates the document number feature indices of each word which belongs to document
+#tuple indicates the document number feature indices of each word which belongs 
+# to document
 #feature indices are generated from the transform method by feature extraction process
 
 #check for repeated words

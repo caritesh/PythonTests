@@ -24,6 +24,7 @@ estimator = [('dim_reduction', PCA()), ('Linear_model', LinearRegression())]
 pipeline_estimator = Pipeline(estimator)
 
 #check the chain of estimator
+print(pipeline_estimator.steps[0])
 print(pipeline_estimator.steps[1])
 print(pipeline_estimator.steps)
 

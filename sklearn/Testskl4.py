@@ -20,6 +20,7 @@ df.head()
 X = np.array(df.drop(['class'],1))
 #X[0]
 y = np.array(df['class'])
+#y[0]
 
 #split data into training and test set
 X_train, X_test, y_train,y_test = train_test_split(X,y,test_size=0.2)
@@ -45,13 +46,17 @@ print(accuracy)
 #unique combination of attributes
 example_measures = np.array([4,2,1,1,1,2,3,2,1])
 example_measures = example_measures.reshape(1,-1)
+example_measures
 prediction = clf.predict(example_measures)
+#predictionTest = clf.predict(X_test)
+#print(predictionTest)
 
 print(prediction)
 
 #considering more set of values
 example_measures = np.array([[4,2,1,1,1,2,3,2,1],[4,2,1,1,1,2,3,2,1]])
 example_measures = example_measures.reshape(2,-1)
+example_measures
 prediction = clf.predict(example_measures)
 
 print(prediction)

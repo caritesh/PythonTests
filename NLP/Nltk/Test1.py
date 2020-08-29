@@ -19,6 +19,9 @@ no_punctuation
 #split each word present in new sentence
 #removing stop words
 no_punctuation.split()
+# for i in no_punctuation.split():
+#     if i.lower() not in stopwords.words('english'):
+#         print(i)
 
 clean_sentence = [word for word in no_punctuation.split() if word.lower() not in stopwords.words('english')]
 

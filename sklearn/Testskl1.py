@@ -1,6 +1,5 @@
 import pandas as pd
 #ML-Linear Regression model
-import pandas as pd
 import numpy as np
 import sklearn
 
@@ -9,8 +8,10 @@ from sklearn.model_selection import train_test_split
 
 #create an object to instantiate a dataset
 boston_dataset = load_boston()
+boston_dataset
 
-#built in methods to explore the dataset (to see no of observations,instances, attributes and other properties)
+#built in methods to explore the dataset (
+# to see no of observations,instances, attributes and other properties)
 print(boston_dataset['DESCR'])
 
 #look into features in dataset
@@ -81,6 +82,7 @@ lineReg.fit(X_train,Y_train)
 print('MSE value is %.2f ' % np.mean((lineReg.predict(X_test)-Y_test) ** 2))
 y_pred = lineReg.predict(X_test)
 print(y_pred)
+Y_test
 
 
 #calc variance
