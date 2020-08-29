@@ -5,7 +5,7 @@ from pprint import pprint
 from time import time
 
 #import the dataset
-df_spam_collection = pd.read_csv('SpamCollection',sep='\t',names = ['response','message'])
+df_spam_collection = pd.read_csv('I:\\GitContent\\Datasets\\SpamCollection',sep='\t',names = ['response','message'])
 
 df_spam_collection.head()
 
@@ -38,11 +38,11 @@ parameters = {'tfidf__use_idf':(True,False)}
 grid_search = GridSearchCV(pipeline,parameters,n_jobs=-1,verbose=1)
 print('performing grid search now..')
 print('paramters: ')
-pprint(parameters)
+pprint(grid_search)
 
 t0 = time()
 grid_search.fit(df_spam_collection['message'],df_spam_collection['response'])
 print('done in %0.3fs'%(time()-t0))
-print()
+
 
 

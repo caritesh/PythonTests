@@ -17,6 +17,10 @@ document3 = 'This was an amazing experience'
 listofdocuments = [document1,document2,document3]
 listofdocuments
 
+# for i in listofdocuments:
+#     for j in i.split():
+#         print(i,j,i.count(j))
+
 
 #Creating a bag of words for list of documents
 #we can use fit method and fit the documents to the vectorized object
@@ -28,7 +32,8 @@ bag_of_words
 #apply transform method and tranform the list fo documents
 bag_of_words = vectorizer.transform(listofdocuments)
 
-#print bag of words and see properties of vectorized object (1st being tuple and 2nd being freq of words)
+#print bag of words and see properties of vectorized object 
+# (1st being tuple and 2nd being freq of words)
 print(bag_of_words)
 
 #tuple indicates the document number feature indices of each word which belongs 
@@ -38,6 +43,8 @@ print(bag_of_words)
 #check for repeated words
 print(vectorizer.vocabulary_.get('very'))
 print(vectorizer.vocabulary_.get('fun'))
+
+vectorizer.vocabulary_.get('day')
 
 #check the type of bag of words
 type(bag_of_words)
