@@ -16,8 +16,9 @@ time_hrs = [7,8,9,10,11,12,13,14,15,16,17]
 style.use('ggplot')
 
 #plotting the website traffic data (X-axis hrs and Y-axis as number of users)
-plt.plot(time_hrs,web_customers)
-#plt.plot(time_hrs,web_customers,color= 'b',linestyle = '--',linewidth=2.5)
+#plt.plot(time_hrs,web_customers)
+plt.plot(time_hrs,web_customers,color= 'g',linestyle = '--',linewidth=2.5
+,label='line one')
 
 #setting the desired axis to interpret the required result
 #Axis is to define the range on x axis and y axis using axis method()

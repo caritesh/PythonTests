@@ -45,6 +45,8 @@ centroids
 labels
 
 colors = 10 * ["g.","r.","c.","b.","k."]
+colors
+X
 import matplotlib.pyplot as plt
 from matplotlib import style
 style.use('ggplot')

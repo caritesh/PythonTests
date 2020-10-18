@@ -83,7 +83,7 @@ def handle_non_numerical_data(df):
                 if unique not in text_digit_vals:
                     text_digit_vals[unique] = x
                     x +=1
-            df[columns] = list(map(convert_to_int, df[column]))   
+            df[column] = list(map(convert_to_int, df[column]))   
     return df
 
 df = handle_non_numerical_data(df)

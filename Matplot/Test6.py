@@ -10,12 +10,16 @@ ap.head(n=5)
 x = ap['date'].values
 y1 = ap['value'].values
 
-
+# n = pd.DatetimeIndex(ap['date']).year.values
+# n
+# xmax=max(pd.DatetimeIndex(ap['date']).year)
+# xmax
 # Plot
+
 def plot_ap(ap, x, y, title="", xlabel='Date', ylabel='Value', dpi=100):
     plt.figure(figsize=(16,5), dpi=dpi)
     plt.plot(x, y, color='tab:red')
-    plt.fill_between(x, y1=y1,y2=-y1, alpha=0.5, linewidth=2, color='seagreen')
+    plt.fill_between(x, y1=y1,y2=-y1, alpha=0.5, linewidth=2, color='green')
     plt.ylim(-800, 800)
     plt.title('Air Passengers (Two Side View)', fontsize=16)
     plt.show()

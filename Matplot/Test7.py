@@ -9,12 +9,16 @@ plt.rcParams.update({'figure.figsize': (10, 7), 'figure.dpi': 120})
 
 # Draw Plot for ser
 ser = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets/master/a10.csv', parse_dates=['date'], index_col='date')
+ser
 ser.reset_index(inplace=True)
 
 
 # Prepare data
 ser['year'] = [d.year for d in ser.date]
+ser
+
 ser['month'] = [d.strftime('%b') for d in ser.date]
+ser
 years = ser['year'].unique()
 ser.head(n=5)
 
@@ -35,6 +39,7 @@ plt.yticks(fontsize=12, alpha=.7)
 plt.title("Seasonal Plot of Drug Sales Time Series", fontsize=20)
 plt.show()
 
+
 #There is a steep fall in drug sales every February, rising again in March, 
 # falling again in April and so on. Clearly, the pattern repeats within a given year, 
 # every year.
@@ -42,3 +47,4 @@ plt.show()
 #However, as years progress, the drug sales increase overall. You can nicely visualize
 #  this trend and how it varies each year in a nice year-wise boxplot. Likewise, 
 # you can do a month-wise boxplot to visualize the monthly distributions.
+

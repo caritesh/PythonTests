@@ -32,7 +32,7 @@ plt.plot(time_hrs,web_tuesday,'g',label='tuesday',linewidth=1.5)
 #wednesday data red color
 plt.plot(time_hrs,web_wednesday,'b',label='wednesday',linewidth=2)
 
-plt.axis([6.5,17.5,50,2000])
+plt.axis([0,20,500,3000])
 
 #set the title of the plot
 plt.title('Web site traffic')
