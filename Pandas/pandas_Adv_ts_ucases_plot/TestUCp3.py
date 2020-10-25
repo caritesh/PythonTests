@@ -76,7 +76,8 @@ for name, ax in zip(['Consumption', 'Solar', 'Wind'], axes):
 if ax != axes[-1]:
     ax.set_xlabel('')
 
-#group the electricity consumption time series by day of the week, to explore weekly seasonality.
+#group the electricity consumption time series by day of the week, 
+# to explore weekly seasonality.
 sns.boxplot(data=opsd_dailyN, x='Weekday Name', y='Consumption')
 
 #Frequencies
