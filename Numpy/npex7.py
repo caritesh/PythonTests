@@ -3,6 +3,7 @@ new_cyclist_trials = np.array([[10,15,17,26,13,19],[12,13,14,24,14,23]])
 new_cyclist_trials
 new_cyclist_trials.ndim
 x = new_cyclist_trials.ravel()
+x
 x.ndim
 
 y = new_cyclist_trials.reshape(3,4)

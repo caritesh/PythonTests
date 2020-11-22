@@ -12,11 +12,11 @@ print(array_with_zeroes)
 array_with_ones = np.ones((3,3))
 print(array_with_ones)
 
+
 array_with_ones.shape
 array_with_ones.size
 array_with_ones.dtype
 array_with_ones.ndim
-
 
 #array with empty (puts in random values)
 array_with_empty = np.empty((2,3))

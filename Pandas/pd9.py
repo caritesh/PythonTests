@@ -52,7 +52,7 @@ df.fillna(0)
 
 #Calling fillna with a dict you can use a different fill value for each column
 df
-df.fillna({1: 0.5, 3: -1})
+df.fillna({1: 0.5, 2: -1})
 
 #modify the existing object in place instead of returning a new object
 _ = df.fillna(0, inplace=True) #always returns a reference to the filled object
@@ -67,7 +67,7 @@ df.fillna(method='ffill')
 df.fillna(method='ffill', limit=2)
 
 #using fillna and passing mean/median 
-data = np.Series([1., NA, 3.5, NA, 7])
+data = pd.Series([1., NA, 3.5, NA, 7])
 data.fillna(data.mean())
 
 

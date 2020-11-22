@@ -5,6 +5,7 @@ import pandas as pd
 frame = pd.DataFrame(np.random.randn(4, 3), columns=list('bde'),
 index=['germany', 'austria', 'russia', 'sweden'])
 frame
+type(frame)
 np.abs(frame)
 
 f = lambda x: x.max() - x.min()
@@ -45,8 +46,8 @@ print(frame.sort_index(axis=1, ascending=False))
 import pandas as pd
 frame = pd.DataFrame({'b': [4, 7, -3, 2], 'a': [0, 1, 0, 1]})
 print(frame)
-print(frame.sort_index(by='b'))
-print(frame.sort_index(by=['a', 'b']))
+print(frame.sort_values(by='b'))
+print(frame.sort_values(by=['a', 'b']))
 
 #Ranking
 #Ranking is closely related to sorting, assigning ranks from 1 to all valid data points

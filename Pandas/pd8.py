@@ -43,7 +43,7 @@ uniques
 
 #series of value frequencies
 ser11 = pd.Series(range(5), index=['a', 'a', 'b', 'b', 'c'])
-ser13.value_counts()
+ser11.value_counts()
 ##pd.value_counts(ser13.values, sort=False)
 
 #isin :responsible for vectorized set membership

@@ -1,5 +1,5 @@
 import numpy as np
-countries = np.array(['luxembourg','Norway','Japan','Switzerland','USA','Qatar'])
+countries = np.array(['luxembourg','Norway','Japan','Switzerland','USA'])
 gdp_per_capita = np.array([52056.1234,40345.4565,45456.78564,33245.56782,34544.45888])
 
 #max gdp per capita
@@ -19,7 +19,7 @@ print(country_with_min_gdp_per_capita)
 for country in countries:
     print('ecalculating country {}'.format(country))
 
-for i in range(len(countries)-1):
+for i in range(0,len(countries)-1):
     country = countries[i]
     country_gdp_per_capita = gdp_per_capita[i]
     print('country {} per capita gdp is {}'.format(country,country_gdp_per_capita))

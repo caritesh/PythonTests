@@ -13,6 +13,8 @@ index=['germany', 'austria', 'russia', 'sweden'])
 print(frame)
 series = frame.loc['germany']
 print(series)
+series1 = frame.loc[['germany']]
+series1
 
 #arithmetic between DataFrame and Series matches the index of the Series
 #on the DataFrame's columns, broadcasting down the rows
