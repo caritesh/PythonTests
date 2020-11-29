@@ -1,5 +1,5 @@
 import pandas as pd
-power = pd.read_csv("I:\\GitContent\\Datasets\\power.csv")
+power = pd.read_csv("I:\\GitContent\\Datasets\\Datasets\\power.csv")
 
 
 power.columns

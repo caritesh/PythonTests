@@ -10,9 +10,10 @@ employees
 group_names = ['Youth', 'YoungAdult', 'MiddleAged', 'Senior']
 employees1 = pd.cut(ages, bins, labels=group_names)
 #categorical object i.e array of strings indicating bin name
-employees
+employees1
 
-#If you pass cut a integer number of bins instead of explicit bin edges, it will compute
+#If you pass cut a integer number of bins instead of explicit bin edges, 
+# it will compute
 #equal-length bins based on the minimum and maximum values in the data.
 data = np.random.rand(20)
 pd.cut(data, 4, precision=2)
