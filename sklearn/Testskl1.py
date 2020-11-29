@@ -78,25 +78,60 @@ print(X_train.shape, X_test.shape,Y_train.shape,Y_test.shape)
 #fit training dataset into estimator/model object
 lineReg.fit(X_train,Y_train)
 
-#mean square error or residual sum of sqaures
-print('MSE value is %.2f ' % np.mean((lineReg.predict(X_test)-Y_test) ** 2))
 y_pred = lineReg.predict(X_test)
 print(y_pred)
 Y_test
 
+#Regression accuracy metrics : MSE(Mean squared error),MAE(Mean absolute error),
+#RMSE(Root Mean squared error), R-Squared( coefficient of determination)
 
+#mean square error or residual sum of sqaures
+print('MSE value is %.2f ' % np.mean((lineReg.predict(X_test)-Y_test) ** 2))
 #calc variance
 #use score method, closer the value to 1, higher would be the accuracy
 print('variance score is %.2f ' % lineReg.score(X_test,Y_test))
 
+#print the intercept
+#%2f is used to round of decimal numbers to 2
+print('the estimated intercept %.2f ' %lineReg.intercept_)
+
+#print coefficients
+print('the coefficients is %d ' %len(lineReg.coef_))
+
 #import required libs for calculating MSE to test accuracy of model
-#from sklearn import metrics
-#print(np.sqrt(metrics.mean_squared_error(Y_test,y_pred)))
+from sklearn import metrics
+print(np.sqrt(metrics.mean_squared_error(Y_test,y_pred)))
 
 #for extra information on using python for regression problems and using
 #spark as processing framework
-#https://github.com/ajaykuma/Spark_n_Scala/blob/master/SparkApplicationsSetup/SparkApplicationBasicExamples/SparkMllib/PySpark_Setup_Usage_forML_for_Regression_Analysis.txt
 
+import numpy as np
+import sklearn.metrics as metrics
+import matplotlib.pyplot as plt
+
+yorig = np.array([-3,-1,-2,1,-1,1,2,1,3,4,3,5])
+ypred = np.array([-2,1,-1,0,-1,1,2,2,3,3,3,5])
+x = list(range(len(yorig)))
+
+plt.scatter(x,yorig, color="red",label="original")
+plt.scatter(x,ypred,color="blue",label="predicted")
+plt.legend()
+plt.show()
+
+#manual approach
+diff = Y_test - y_pred
+mse = np.mean(diff**2)
+mae = np.mean(abs(diff))
+rmse = np.sqrt(mse)
+r2 = 1-(sum(diff**2)/sum(Y_test-np.mean(Y_test))**2)
+print("mse:",mse)
+#similarly other print statements
+
+#sklearn approach
+mae = metrics.mean_absolute_error(Y_test,y_pred)
+mse = metrics.mean_squared_error(Y_test,y_pred)
+rmse = np.sqrt(mse)
+r2 = metrics.r2_score(Y_test,y_pred)
 
 
 
