@@ -1,0 +1,54 @@
+Standardscaler ()
+--standardized algo for scaling data..
+--when data follows a normal distrbution.
+--
+subtract  the mean from each data point and then divide the result by std.
+--result will be a datasets with a mean of 0 and std deviation of 1
+
+MinMaxScaler()
+linear scaling function
+--if zero mean and unit variance to be avoided..
+subtract the min value fro each data point and divide the result by max and min
+valus..
+range of 0 to 1..
+
+Robustscaler()
+uses median & quartiles ti tackle the biases routing from outlier.
+
+why to use these..
+Data scaling...method of reducing the effect of data bias on predictions..
+(pre-processin steps in ML)..
+
+=================
+
+scaling methods..
+
+
+SS:
+--easy to implement+works faster
+--reglarization
+assumes: data has normal distribution
+	 scalability issue with larger data
+         sensitive to outliers..
+
+MM
+--easy to implement+works faster
+--if zero mean and unit variance to be avoided..
+sensitive to outliers..
+--in a range of 0-1, can be significant loss of information..
+
+RS
+handles outliers n skewness
+
+============================
+Pre-processing
+
+taking cr of outliers (removing/replacing them)
+fill/replace na/null
+adding/removing/grouping columns(features)
+deciding on your target/response/label column or calculating it
+scaling...prep your data to avoid any kind of biases..
+
+-----------
+
+
