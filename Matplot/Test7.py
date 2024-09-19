@@ -8,7 +8,7 @@ import pandas as pd
 plt.rcParams.update({'figure.figsize': (10, 7), 'figure.dpi': 120})
 
 # Draw Plot for ser
-ser = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets/master/a10.csv', parse_dates=['date'], index_col='date')
+ser = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets_For_Work/refs/heads/main/a10.csv', parse_dates=['date'], index_col='date')
 ser
 ser.reset_index(inplace=True)
 

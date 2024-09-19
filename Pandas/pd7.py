@@ -39,7 +39,6 @@ columns=['d', 'a', 'b', 'c'])
 print(frame.sort_index())
 print(frame.sort_index(axis=0))
 print(frame.sort_index(axis=1))
-
 print(frame.sort_index(axis=1, ascending=False))
 
 #sorting dataframe by values
