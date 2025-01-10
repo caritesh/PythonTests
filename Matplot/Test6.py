@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 # Import data
-ap = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets/master/AirPassengers.csv', parse_dates=['date'])
+ap = pd.read_csv('https://raw.githubusercontent.com/ajaykuma/Datasets_For_Work/refs/heads/main/AirPassengers.csv')
 ap.head(n=5)
 x = ap['date'].values
 y1 = ap['value'].values
