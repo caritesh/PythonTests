@@ -32,7 +32,4 @@ print('Earth' in teststring)
 #note: in show boolean value,find shows index
 
 
-x = '1H'
-x = x[0]+x[1].replace('H','h')
-x
 
