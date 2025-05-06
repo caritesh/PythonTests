@@ -145,7 +145,7 @@
                 "sha256:c9d7b7c5e91b13488b657e364ff392a80b2e374b182138e5ec8702a1822bffdc"
             ],
             "index": "pypi",
-            "version": "==2.4.0"
+            "version": "==3.4.0"
         },
         "six": {
             "hashes": [
