@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 
 [dev-packages]
-pyspark = "==3.0.3"
+pyspark = "==3.4.0"
 ipython = "*"
 "flake8" = "*"
 
