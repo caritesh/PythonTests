@@ -62,7 +62,7 @@ C:\PythonWork>myenv\Scripts\activate.bat
 --shows name of environment as prefix
 (myenv) C:\PythonWork>
 
-[Note** on linix/mac command vary
+[Note** on linux/mac command vary
 python3 -m venv myenv
 ls
 <path>source myenv/bin/activate]

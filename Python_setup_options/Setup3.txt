@@ -1,3 +1,24 @@
+
+Option1: create modelname.py
+Install pip if not installed on machine..
+for dependencies: C:\Users\Ajay kumar\Desktop>pip install pandas
+from your cmd > python modelname.py
+
+Option2: Python IDE (PyCharm or Visual studio code)
+
+Option3: cloud.google.com > create free account > VERTEX AI> colab Enterprise > create notbeook
+
+Work Environment: 
+data collected from sensors > pre-processing of data (labelling it for further analysis or classification)
+> extra subsets of data from the file into different classes > EDA : exploratory data analysis (Quant/qual) >
+--biases
+--variation
+--distribution of data based on features
+>data is prepared for classification /clustering ML ..
+--model training, testing, evaluation, validation, ..model reassignment..training, testing..accurary check..>
+--test against new unseen data
+
+
 #Setting up jupyter to use notebooks
 Start cmd prompt as administrator
 
