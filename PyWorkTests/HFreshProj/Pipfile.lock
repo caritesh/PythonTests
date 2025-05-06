@@ -138,7 +138,7 @@
                 "sha256:5ffada19f6203563680669ee7f53b64dabbeb100eb51b61996085e99c03b284a",
                 "sha256:e8218dd399a61674745138520d0d4cf2621d7e032439341bc3f647bff125818d"
             ],
-            "version": "==2.7.4"
+            "version": "==2.15.0"
         },
         "pyspark": {
             "hashes": [
