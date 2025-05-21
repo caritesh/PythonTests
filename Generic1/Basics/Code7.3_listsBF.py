@@ -10,7 +10,6 @@ test
 test.sort()
 test
 
-test
 test[0]
 test[1]
 test[2]
@@ -39,8 +38,6 @@ for i in mylist:
         mydupele.append(i)
 mynewset
 mydupele
-
-mynewset
 
 #zip:“pairs” up the elements of a number of lists, tuples, or other sequences, to create
 #a list of tuples:

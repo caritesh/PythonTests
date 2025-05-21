@@ -1,7 +1,8 @@
-#working with tuples (espescially using when we need
-# unmodifiable list)
+#1 Working with tuples (espescially using when we needunmodifiable list)
 #note** tuples are immutable
+
 numbers = (1,2,3,5,6)
+print(numbers)
 print(numbers[0])
 
 for i in numbers:
@@ -10,32 +11,35 @@ for i in numbers:
 numbers.count(1)
 
 tup = 4, 5, 6
-tup
 type(tup)
+print(tup)
 
 #creating a tuple of tuples
 nested_tup = (4, 5, 6), (7, 8)
-nested_tup
+print(nested_tup)
+
 for i in nested_tup:
     print(i[0])
 len(nested_tup)
 
 #converting sequence/iterator to tuple
 x = tuple([4, 0, 2])
-x
+print(x)
 type(x)
 
 a = [1,2,3,4,5]
 type(a)
+
 t_a = tuple(a)
-t_a
+print(t_a)
 type(t_a)
+
 t_l = list(t_a)
-t_l
+print(t_l)
 type(t_l)
 
 tup = tuple('hello world')
-tup
+print(tup)
 
 #slicing in tuples
 tup[0:2]
@@ -45,7 +49,8 @@ tup[:-1]
 tup[-5:-1]
 
 tup = tuple(['foo', [1, 2], True])
-tup[2] = False
+tup(2) = False
+print(tup)
 
 #'tuple' object does not support item assignment
 

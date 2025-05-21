@@ -1,4 +1,4 @@
-#Arthemetic operators
+#1 Arthemetic operators
 #integer
 print(10*3)
 print(10+2)
@@ -7,28 +7,37 @@ print(10-2)
 #integer
 print(10//3)
 
-#floating point number
+#2 floating point number
 print(10/3)
 
-#modulus showing remainder
+#3 modulus showing remainder
 print(10%3)
 
-#exponent i.e. power
+#4 exponent i.e. power
 print(10**3)
 
-#augmented assignment operator
+#5 augmented assignment operator
 #use for sum,minus etc
 x = 10
+print(x)
 x = x + 3
+print(x)
 x += 3
+print(x)
+x -= 3
+print(x)
+x *= 3
+print(x)
+x /= 3
 print(x)
 
 #operator precedence
-#parenthesis
-#exponentiation
-#multiplication/division
-#addition/subtraction
+    #parenthesis
+    #exponentiation
+    #multiplication/division
+    #addition/subtraction
 
+#6 Others
 #round
 x = 2.9
 print(round(x))

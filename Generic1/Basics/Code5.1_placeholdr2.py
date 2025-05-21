@@ -7,9 +7,8 @@ print(finalmsg)
 finalmsgf = f'{umsg1} {lmsg2} This is an imp note'
 print(finalmsgf)
 
-#
-#using formatted string & place holders
-#
+##using formatted string & place holders
+
 first = "queen"
 last = "elizabeth"
 #simple concatenation
@@ -17,5 +16,5 @@ msg = first + ' [' + last + '] is a queen'
 print(msg)
 
 #{}--defining place holders in a formatted string
-msgf = f'{first} [{last}] is a queen'
+msgf = f'{first} {last} is a queen'
 print(msgf)

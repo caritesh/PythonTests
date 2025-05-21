@@ -1,3 +1,4 @@
+#1 Working with strings
 teststring = "earth is round"
 
 #using built in functions
@@ -14,22 +15,25 @@ teststring.title(),
 teststring.swapcase(),
 teststring.startswith('r'))
 
+#2 Evaluating
 teststring.endswith('e')
 teststring.find('round')
-teststring.replace('earth','our earth', 1)
-
-#
-print(teststring.upper())
-print(teststring.lower())
-print(teststring.title())
-print(teststring.swapcase())
-print(teststring.startswith('r'))
-#
 print(teststring.find('e')) #prints index of this element
 print(teststring.replace('earth','Earth'))
 print('Earth' in teststring)
+teststring.replace('earth','our earth', 1)
+teststring.count('earth')
 
-#note: in show boolean value,find shows index
+#3
+print(teststring.upper(),end=' |')
+print(teststring.lower(),end=' ,')
+print(teststring.title())
+print(teststring.swapcase())
+print(teststring.startswith('r'))
+
+#4 Slicing
+print(teststring[0:5])
+print(teststring[9:0])
 
 
 
