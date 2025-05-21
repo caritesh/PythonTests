@@ -9,7 +9,8 @@ x,y,z = coordinates
 print(x)
 print(y)
 print(z)
-print('*'* 40)
+print('-'* 40)
+
 #Python interpreter looks into tuple and
 #assigns values to x,y and z i.e. unpacks the tuple
 #to variables

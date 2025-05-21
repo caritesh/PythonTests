@@ -81,11 +81,13 @@ for ch in phone:
 
 #using split
 message = input("> ")
+
 words = message.split(' ')
 print(words)
 
 #mapping special characters to say emojis
 message = input("> ")
+
 words = message.split(' ')
 emojis = {
     ":)": "😊",
@@ -97,6 +99,32 @@ for word in words:
     output += emojis.get(word) + ""
 print(output)
 
-#
+#nested dict and get/update
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+print(myfamily)
+print(myfamily.get("child3"))
+
+myfamily["child3"]
+
+myfamily["child3"].update({"year":2022})
+print(myfamily)
+
+#creating dicts from seq
+mapping = dict(zip(range(5), reversed(range(5))))
+mapping
+
 
 

@@ -1,16 +1,20 @@
+#1
 #Exception handling or error handling
 age = int(input('Age:'))
 print(age)
-#ValueError: invalid literal for int() with base 10: 'asd' and exit code 1(program crashed)
 
-print('*'*50)
+#If str entered: ValueError: invalid literal for int() with base 10: 'asd' 
+# and exit code 1(program crashed)
+
+#2
 #lets print proper error message
 try:
     age = int(input('Age:'))
     print(age)
 except ValueError:
-    print('Invalid value')
-print('*'*50)
+    print('Invalid value --> int expected')
+
+#3
 #lets print proper error message
 try:
     age = int(input('Age:'))

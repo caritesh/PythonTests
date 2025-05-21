@@ -1,24 +1,30 @@
-#function
-#greet_user() #'greet_user' is not defined
-def greet_user():
-    print("hi there!")
-    print("welcome aboard!")
+#1
+def mysum(n):
+    return n * 1000
 
-print("start")
-greet_user()
-print("finish")
-print('*'*40)
+mysum(20)
 
-#===============================
-def greet_user2(name):
-    print(f'Hi {name}!')
-    print('Welcome aboard')
+#2
+mylist = [23,34,45,56,67]
+newlist = []
 
-print("start")
-greet_user2("John")
-greet_user2("Johny")
-print("finish")
-print('*'*40)
+for i in mylist:
+    newlist.append(mysum(i))
+
+newlist
+
+#3
+mylist2 = [23,34,45,56,67]
+preflist = list(map(lambda n: n*100,mylist2))
+preflist
+
+#4
+sellist = list(filter(lambda i: i%2==0,mylist2))
+sellist
+
+#5
+preflist = list(map(lambda n: mysum(n),mylist2))
+preflist
 
 
 

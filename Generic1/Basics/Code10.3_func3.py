@@ -1,19 +1,35 @@
-def greet_user2(fname,lname):
-    print(f'Hi {fname} {lname}!')
-    print('Welcome aboard')
-#arguments to be passed are positional arguments
-greet_user2("john","smith")
+#1
+import math
+print(math.sqrt(4))
 
-print('*'*40)
-#keyword arguments imprve readability and order doesnt matter
+x = ['cool','winter','summer']
+z = list(map(lambda n: n.upper(),x))
+for i in z:
+    print(i)
+type(z)
+print(z)
 
-#==================================
-greet_user2("john",lname="smith")
-print('*'*40)
+#2
+def testf():
+    yield 10
+    yield 20
+    yield 30
+    yield 40
 
-#keyword arguments always come after positional arguments
-greet_user2("smith",lname="johny")
+for i in testf():
+    print(i)
 
+#3
+def testnum():
+    i = 1
+    while True:
+        yield i*i
+        i += 1
 
-#calc_cost(total=50,shipping=5,discount=0.10)
+for n in testnum():
+    if n > 20:
+        break
+    print(n)
+
+#More examples to be added
 
