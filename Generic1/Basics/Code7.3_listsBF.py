@@ -81,3 +81,8 @@ type(mapping)
 
 result = [n in some_list for n in some_list]
 result
+
+#using collections
+import collections
+l = ["he","she","he","she","he"]
+print(sorted(collections.Counter(l)))

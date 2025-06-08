@@ -1,24 +1,17 @@
 #####
-# x = "welcome to the geeks world"
-# y = "this should be welcome to geek\'s world"
-# print(x + " " + y)
-# z = x + " " + y
-# type(z)
-# a = z.split()
-# type(a)
-# print(a)
-# lst = ['we need more storage','we need more space']
-# l = []
-# for i in lst:   
-#     for n in i.split():
-#         l.append(n)
-# k = ["storage","space"]
-# for i in l:     
-#     for n in k:
-#         if i == n:
-#             print(i,l.count(i)) 
+#1 Testing 
+lst = ['we need more storage','we need more space']
+l = []
+for i in lst:   
+    for n in i.split():
+        l.append(n)
+k = ["storage","space"]
+for i in l:     
+    for n in k:
+        if i == n:
+            print(i,l.count(i)) 
 
-#####
+#2 Testing 
 lst = ['we need more storage',
 'we need more space',
 'we need more storage',
